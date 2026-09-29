@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Assistant Bot</title>
+  <meta name="description" content="A private Telegram personal assistant for tasks, reminders and Google Calendar.">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; color: #1f2328; background: #fff; max-width: 680px; margin: 0 auto; padding: 32px 16px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    .tagline { color: #59636e; margin-top: 0; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #d1d9e0; font-size: 0.9rem; color: #59636e; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>Personal Assistant Bot</h1>
+  <p class="tagline">A private Telegram assistant for tasks, reminders and calendar.</p>
+
+  <p>Personal Assistant Bot is a Telegram bot built for personal use. It isn't a public service, and only a small allowlist of pre-approved Telegram chats can use it.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Keeps a task list from plain-language messages, like "remind me to call the dentist tomorrow at 3pm".</li>
+    <li>Understands voice messages, photos and PDF documents.</li>
+    <li>Sends check-ins at 8am, 2pm and 8pm that summarize open tasks.</li>
+    <li>Optionally connects to Google Calendar. It can list today's events, add or delete events when explicitly asked, and send a reminder 30 minutes before an event.</li>
+  </ul>
+
+  <h2>Google Calendar access</h2>
+  <p>Calendar access is opt-in. The user connects with the <code>/connect</code> command, which starts Google's standard sign-in. The bot asks only for permission to view and edit calendar events. It never asks for calendar settings or sharing. Access can be revoked at any time with <code>/disconnect</code> or from the user's <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>

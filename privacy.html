@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Personal Assistant Bot.">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; color: #1f2328; background: #fff; max-width: 680px; margin: 0 auto; padding: 32px 16px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    .updated { color: #59636e; margin-top: 0; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #d1d9e0; font-size: 0.9rem; color: #59636e; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 28, 2026</p>
+
+  <p>Personal Assistant Bot (the "app") is a Telegram bot built for personal use only. It isn't offered to the public. Only a small allowlist of pre-approved Telegram chats can use it, and the app ignores messages from any other chat without storing them.</p>
+
+  <h2>Data the app collects</h2>
+  <ul>
+    <li><strong>Telegram messages.</strong> The app receives the text, voice messages, photos and documents sent to it by allowlisted chats. It processes them to work out what to do and how to reply. It doesn't keep a message history.</li>
+    <li><strong>Tasks.</strong> Tasks and reminders created from messages are stored in the app's database, along with their due dates, status and the Telegram chat ID they belong to.</li>
+    <li><strong>Google Calendar (optional).</strong> If a user connects Google Calendar through Google OAuth, the app requests only the <code>https://www.googleapis.com/auth/calendar.events</code> scope. It uses this to read events on the user's primary calendar, for daily summaries, reminders before events and answering questions about the schedule. It creates or deletes events only when the user explicitly asks. The OAuth refresh token is stored encrypted (AES-256-GCM). Event contents aren't stored or logged. The app keeps only the event IDs and start times needed to avoid sending the same reminder twice.</li>
+  </ul>
+
+  <h2>How data is processed</h2>
+  <p>To understand messages, the app sends message content to third-party AI services acting as processors:</p>
+  <ul>
+    <li>Anthropic (Claude) for text, photos, documents, and calendar events when matching a request to an event.</li>
+    <li>OpenAI for voice message transcription and spoken replies.</li>
+  </ul>
+  <p>The app runs on Railway, a cloud hosting provider. Data is used only to provide the assistant's features to the allowlisted user. It is never sold, shared for advertising, or used for any other purpose.</p>
+
+  <h2>Google user data</h2>
+  <p>The app's use and transfer of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google Calendar data isn't used to train AI models, and it isn't transferred to anyone except as described above to provide the app's features.</p>
+
+  <h2>Deleting data and revoking access</h2>
+  <ul>
+    <li>Send <code>/disconnect</code> to the bot. This revokes the app's Google access and deletes the stored token.</li>
+    <li>Google access can also be removed at any time from <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+    <li>To have stored tasks deleted, contact the app owner.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy, contact the app owner through <a href="https://github.com/tfrewmd">GitHub</a>.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+  </footer>
+</body>
+</html>
